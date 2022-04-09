@@ -1,0 +1,29 @@
+Creare component Jock
+service Jock
+il service deve avere un metodo getRandomJok -> fa chaimata get allì'API https://api.chucknorris.io/jokes/random
+il metodo ritorna un Obsrevable di Tipo JockJock è un Tipo definito da voi che deve avere:: preso tramite il metofo getRandomJok del service
+-    deve mostrare una immagine il cui src corrisponde ad icon_url
+-
+    -   icon_url: string
+    -   id: String
+    -   url: String
+    -   value: String
+    -   categories: Arrey<String>
+Il component Jock deve mostrare i dati di un oggetto di Tipo Jock: preso tramite il metofo getRandomJok del service
+-    deve mostrare una immagine il cui src corrisponde ad icon_url
+- un paragrafo sottostante il cui testo corrisponde a value
+
+
+il cui href è url
+sotto quest'ancora stampare separati da virgola le categorie dell'array categories
+
+sotto un pulsante refresh che al click mi aggiorni la view con una nuova barzelletta
+
+Liv.2
+altro componente: Jokes il quale avrà:
+    -   in alto una barra di ricerca con pulsante cerca
+    -   lista di jockComponent (tanti jockComponent) perche quando cerco qualcosa, chiamo il metodo dentro jockService che si chaima getJokesByScreach(text)      https://api.chucknorris.io/jokes/search?query={query}
+        -   questa restituirà un Obsrevable<Joke[]>
+
+Liv. 3
+    -   le 2 due root (path )diverse e quando click sul secondo entro nell'altra visuale
